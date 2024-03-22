@@ -26,8 +26,8 @@ public class Produto implements Persistente {
 	@ColunaTabela(dbName = "valor", setJavaName = "setValor")
 	private BigDecimal valor;
 
-	@ColunaTabela(dbName = "notaFiscal", setJavaName = "setValor")
-	private BigDecimal notaFiscal;	
+	@ColunaTabela(dbName = "notaFiscal", setJavaName = "setFiscal")
+	private BigDecimal notaFiscal;
 
 	public BigDecimal getNotaFiscal() {
 		return notaFiscal;
