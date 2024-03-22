@@ -31,6 +31,17 @@ public class Cliente implements Persistente {
     
 	@ColunaTabela(dbName = "estado", setJavaName = "setEstado")
     private String estado;
+	
+	@ColunaTabela(dbName = "pj", setJavaName = "setPj")
+	private Boolean pj;
+
+	public Boolean getPj() {
+		return pj;
+	}
+
+	public void setPj(Boolean pj) {
+		this.pj = pj;
+	}
     
 	public String getNome() {
 		return nome;

@@ -25,6 +25,7 @@ public class ClienteDaoMock implements IClienteDAO {
 	public Cliente consultar(Long valor) {
 		Cliente cliente = new Cliente();
 		cliente.setCpf(valor);
+		cliente.setPj(false);
 		return cliente;
 	}
 
